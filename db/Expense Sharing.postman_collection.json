@@ -1,0 +1,351 @@
+{
+	"info": {
+		"_postman_id": "f48205ae-5e54-4018-936e-33641e0caa88",
+		"name": "Expense Sharing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12895842"
+	},
+	"item": [
+		{
+			"name": "Group Data",
+			"item": [
+				{
+					"name": "Get Group Data",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjU5ZmU2YTBkODUzZjU3NjIxMGYxMDNkODQyYjRhOTU2YmEyMWVlMzNkOWE1ZWZmN2E4YTIzNTY1N2Q5NDY1MzNkMzEwOGRkZTlhMDRiMGQiLCJpYXQiOjE2NjA4OTkyNjYuMzU3NjIxLCJuYmYiOjE2NjA4OTkyNjYuMzU3NjI2LCJleHAiOjE2OTI0MzUyNjYuMzQyMDY2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.l1ri5JkAjTg3PlBkXChlkVCpvGYhf4VDSpQYigPJ9iMzdb-lSNNPakrBRtOqRKn0DlynJcgKLgGIljT14kc-KMolif5brQP8fajG2N6_pRIVhBAypLr1rw9Fo6kTlQQMHoyN_Z7MBQGWe_8Q8qaT1XaOfziYjuVvnjC46WBjuh7HYBRU7GmOgLg9v0ZzHbIm8tz9cLJT08Hjdc1tb1xIJR98ghlQMBLFfEDfJQ74ABk-wVvJ4EWdd9IeImqmzCKd-yJdtkkEKg2FCGTTHeYYGWXW5dshubgoQM8M9TB9nAIjJQZ5YPXPIYIpjvMns7iu804bug_0bAwie0PcH1H0O5ABlDdqHX85uU5HUCJq7_ZtORQx8HTO8oSMfAACdUgbDDbbZg1Sc67BzEdz9l6n3bypfVdB3qwefolHCUiONgTFLJ0QdVl1VaI2Qz3DKB-ldFXjlyUjBER-h377HaLrWrixnU3ADkjCZ2B_uqo72qterUX38XCTjdXT8LpAypU3F9k4cx1V-f6uPV3e4OEtQ5v-BD4QPE31Q7y9jhUtvMdDtkmladFMlPBxDx2NhkpZNi6A1gZR75hcUtCHujpE_vPyBb0apbPfRiJxy4l8_CEy0o1jKPDrxUABaA1YZoAWxfiipMNJMv7HgPZ0PaE9Ya4XKDuA9aY3PLwRf24OpIo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/get-group-data",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"get-group-data"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Store Expense",
+			"item": [
+				{
+					"name": "Store Expense",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjU5ZmU2YTBkODUzZjU3NjIxMGYxMDNkODQyYjRhOTU2YmEyMWVlMzNkOWE1ZWZmN2E4YTIzNTY1N2Q5NDY1MzNkMzEwOGRkZTlhMDRiMGQiLCJpYXQiOjE2NjA4OTkyNjYuMzU3NjIxLCJuYmYiOjE2NjA4OTkyNjYuMzU3NjI2LCJleHAiOjE2OTI0MzUyNjYuMzQyMDY2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.l1ri5JkAjTg3PlBkXChlkVCpvGYhf4VDSpQYigPJ9iMzdb-lSNNPakrBRtOqRKn0DlynJcgKLgGIljT14kc-KMolif5brQP8fajG2N6_pRIVhBAypLr1rw9Fo6kTlQQMHoyN_Z7MBQGWe_8Q8qaT1XaOfziYjuVvnjC46WBjuh7HYBRU7GmOgLg9v0ZzHbIm8tz9cLJT08Hjdc1tb1xIJR98ghlQMBLFfEDfJQ74ABk-wVvJ4EWdd9IeImqmzCKd-yJdtkkEKg2FCGTTHeYYGWXW5dshubgoQM8M9TB9nAIjJQZ5YPXPIYIpjvMns7iu804bug_0bAwie0PcH1H0O5ABlDdqHX85uU5HUCJq7_ZtORQx8HTO8oSMfAACdUgbDDbbZg1Sc67BzEdz9l6n3bypfVdB3qwefolHCUiONgTFLJ0QdVl1VaI2Qz3DKB-ldFXjlyUjBER-h377HaLrWrixnU3ADkjCZ2B_uqo72qterUX38XCTjdXT8LpAypU3F9k4cx1V-f6uPV3e4OEtQ5v-BD4QPE31Q7y9jhUtvMdDtkmladFMlPBxDx2NhkpZNi6A1gZR75hcUtCHujpE_vPyBb0apbPfRiJxy4l8_CEy0o1jKPDrxUABaA1YZoAWxfiipMNJMv7HgPZ0PaE9Ya4XKDuA9aY3PLwRf24OpIo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "total_expense",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "payed_user",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "message",
+									"value": "Pay Electric city Bill",
+									"type": "text"
+								},
+								{
+									"key": "group_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "expense_type",
+									"value": "1",
+									"description": "1 for EQUAL , 2 for EXACT, 3 for PERCENT",
+									"type": "text"
+								},
+								{
+									"key": "user_wise_amount",
+									"value": "[{\"3\": \"100\",\"2\": \"300\",\"1\": \"400\",\"4\": \"200\"}]",
+									"description": "For EXACT Expense Type",
+									"type": "text"
+								},
+								{
+									"key": "user_wise_percentage",
+									"value": "[{\"3\": \"10\",\"2\": \"30\",\"1\": \"40\",\"4\": \"20\"}]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/expense-store",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"expense-store"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Total User Wise Balance",
+			"item": [
+				{
+					"name": "get user Wise Balance",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjU5ZmU2YTBkODUzZjU3NjIxMGYxMDNkODQyYjRhOTU2YmEyMWVlMzNkOWE1ZWZmN2E4YTIzNTY1N2Q5NDY1MzNkMzEwOGRkZTlhMDRiMGQiLCJpYXQiOjE2NjA4OTkyNjYuMzU3NjIxLCJuYmYiOjE2NjA4OTkyNjYuMzU3NjI2LCJleHAiOjE2OTI0MzUyNjYuMzQyMDY2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.l1ri5JkAjTg3PlBkXChlkVCpvGYhf4VDSpQYigPJ9iMzdb-lSNNPakrBRtOqRKn0DlynJcgKLgGIljT14kc-KMolif5brQP8fajG2N6_pRIVhBAypLr1rw9Fo6kTlQQMHoyN_Z7MBQGWe_8Q8qaT1XaOfziYjuVvnjC46WBjuh7HYBRU7GmOgLg9v0ZzHbIm8tz9cLJT08Hjdc1tb1xIJR98ghlQMBLFfEDfJQ74ABk-wVvJ4EWdd9IeImqmzCKd-yJdtkkEKg2FCGTTHeYYGWXW5dshubgoQM8M9TB9nAIjJQZ5YPXPIYIpjvMns7iu804bug_0bAwie0PcH1H0O5ABlDdqHX85uU5HUCJq7_ZtORQx8HTO8oSMfAACdUgbDDbbZg1Sc67BzEdz9l6n3bypfVdB3qwefolHCUiONgTFLJ0QdVl1VaI2Qz3DKB-ldFXjlyUjBER-h377HaLrWrixnU3ADkjCZ2B_uqo72qterUX38XCTjdXT8LpAypU3F9k4cx1V-f6uPV3e4OEtQ5v-BD4QPE31Q7y9jhUtvMdDtkmladFMlPBxDx2NhkpZNi6A1gZR75hcUtCHujpE_vPyBb0apbPfRiJxy4l8_CEy0o1jKPDrxUABaA1YZoAWxfiipMNJMv7HgPZ0PaE9Ya4XKDuA9aY3PLwRf24OpIo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "group_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/get-balance",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"get-balance"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test4",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test4@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "9512727308",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTNhNjc0NmM2YjAxYmNlZmVjOWQzYjJkNGIyYTdiZDc1YTVkM2ZhYTZkOGFlNTI2MGI2OGI5ZTk4MDJmY2JmYTBmMGQzMTJiYmI1YTlkZmQiLCJpYXQiOjE2NjA4OTI3MzcuNDk4NDksIm5iZiI6MTY2MDg5MjczNy40OTg0OTMsImV4cCI6MTY5MjQyODczNy40OTM0NDksInN1YiI6IjEiLCJzY29wZXMiOltdfQ.jeJCPXZP2vruiw8i-xk7lRafiLa0zxmo0ooMjfoXfznCRTp3vb9qsYTPtqjQCGkC7c1HNhWJ3H9-5dePm73ut3rB2AHZtM4pGQBlo7Ylg6tCLs8UBu-91_kPoYCExu6Y6uVKBJ8IqXb3vbVH2UKf5X4pYyhvhGECFegj3hGE01Ddw-rD3p1k8k99uztAXPQyyic8p5QlGGQCnKXSkxi6G4kUEkFiKoYFrR2Sit2B0N4DPjvwyOFWv6lKLQgsMlgkyDB3wZiElxu61c_TIzrQBPEAskO2lpEHwmsrhqUlT5YlEpZZp2G99Wjr8dlK-98zCICs4r6KVejeERE6-9P9RWpK4lh9CVwMDSBxYTcRKdSQwpwmS-scHtppbLB3Faeh4vR0OxJm-j9vyusuOSiaIw9CytlUHV3P_FimuoPSGjVTb4SGzR9CPSJXUVaa4ibaG6SrZc4tiJn7pmkNzNde4lkzDqajCez38VJTbk_z6T0KA1VnwqevxueMhg6a6bRnAEMwE0sHZHA24-NqzBTxg0Nq6uRIeZ0qEFGuxLgKbQZlIC7lS6_7gleDQ9zo066xe_Oed22iksfj2OXWCUDlzgnyunLcFs-khO3e6zmH8HthjFCbgvA6Wk1PZ4ImEZrYo9xjebju-tgHh35FjoKoVu9N8AhOAOPkGMQemhAnexo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
